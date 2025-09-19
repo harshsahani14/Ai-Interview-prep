@@ -3,8 +3,6 @@ import {Code,Play,RotateCcw,CheckCircle,ArrowLeft } from 'lucide-react';
 import CodeMirror, { basicSetup,EditorView } from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
 import { dracula} from '@uiw/codemirror-theme-dracula';
-import { java } from '@codemirror/lang-java';
-import { python } from '@codemirror/lang-python';
 
 function App() {
 
@@ -268,7 +266,7 @@ function App() {
                       height='630px'
                       
                       onChange={(value) => setCode(value)}
-                      extensions={[ javascript({jsx:true})]}
+                      extensions={[ javascript({ jsx:true })]}
                       theme={dracula}
                     />
 
